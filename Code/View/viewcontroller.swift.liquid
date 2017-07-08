@@ -1,0 +1,34 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+final class {{ module_info.name }}ViewController: UIViewController {
+
+	// MARK: -
+	// MARK: Properties
+	var output: {{ module_info.name }}ViewOutput!
+
+	// MARK: -
+	// MARK: Life cycle
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		output.viewIsReady()
+	}
+
+}
+
+// MARK: -
+// MARK: {{module_info.name}}ViewInput
+extension {{ module_info.name }}ViewController: {{module_info.name}}ViewInput {
+
+	func setupInitialState() {
+
+	}
+
+}
